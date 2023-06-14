@@ -1,0 +1,233 @@
+@import url('https://fonts.googleapis.com/css2?family=Flamenco:wght@300&family=Moon+Dance&family=Noto+Sans:wght@300;400&family=Open+Sans:wght@400;800&family=Roboto:wght@500&family=Rubik&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    border: none;
+    font-family: 'Open Sans', sans-serif;
+}
+
+span {
+    color: #00A8FF;
+}
+
+.underline {
+    display: inline-block;
+    width: 100px;
+    border-bottom: 3px solid #00A8FF;
+    margin: 25px;
+}
+
+
+.navbar {
+    /* position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    transition: background-color 0.3s ease-in-out;
+    z-index: 100; */
+    height: 9vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    /* background-color: #2f2f2f; */
+    background-color: #ffff;
+
+}
+
+.navbar img {
+    height: 70px;
+    width: 100px;
+    margin-left: 25px;
+}
+
+header nav {
+    width: 40%;
+
+    display: flex;
+    justify-content: space-around;
+    margin-right: 25px;
+    font-size: 17px;
+}
+
+header nav a {
+    text-decoration: none;
+    color: #000;
+    flex: 1;
+    border-radius: 25px;
+    text-align: center;
+}
+
+.homecontainer {
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.65)), url('img/New/home1.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+}
+
+.home {
+    width: 100%;
+    height: 75vh;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.home .heading {
+    width: 50%;
+}
+
+.home .heading h2 {
+    font-size: 45px;
+    margin: 20px;
+    font-weight: 500;
+    /* text-transform: uppercase; */
+}
+
+.home .heading h3 {
+    font-size: 24px;
+    margin: 20px 0px 5px 0px;
+    font-weight: 500;
+    line-height: 2.5rem;
+
+}
+
+.home .btn {
+    /* background-color: aqua; */
+    width: 50%;
+    margin: 25px;
+    height: 80px;
+}
+
+.home .btn button {
+    height: 50px;
+    margin: 10px;
+    width: 25%;
+    font-size: 17px;
+    border-radius: 25px;
+    background-color: #FFff;
+    /* color: aliceblue; */
+}
+
+.home .btn button:hover {
+    background-color: transparent;
+    color: #00A8FF;
+    border: 1px solid #00A8FF;
+    transition: 0.25s ease-in-out;
+    transform: scale(1.05);
+}
+
+
+
+
+
+.info {
+    height: 90vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+}
+
+.info .right {
+    width: 40%;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.info .right h2 {
+    text-align: center;
+    font-size: 34px;
+    font-weight: 600;
+    margin: 10px;
+}
+
+.info .right h3 {
+    text-align: left;
+    font-size: 18px;
+    font-weight: 400;
+    margin: 10px;
+}
+
+
+.container {
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url('img/New/aboutbg-1.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    /* color: white; */
+}
+.container .heading{
+    color: aliceblue;
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.container .card-container {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+}
+
+.container .card {
+    background-color: aliceblue;
+    height: 55vh;
+    width: 20%;
+    text-align: center;
+    border-radius: 30px;
+}
+
+.container .card img {
+    width: 100%;
+    height: 200px;
+    border-radius: 30px;
+    /* aspect-ratio: 3/2;
+    object-fit: contain; */
+
+}
+
+.container .card .card-content {
+    margin: 20px;
+}
+.container .card .btn {
+    /* background-color: aqua; */
+    width: 100%;
+    margin: 5px;
+    height: 60px;
+}
+.container .card .btn button {
+    height: 45px;
+    margin: 5px;
+    width: 150px;
+    font-size: 16px;
+    border-radius: 25px;
+    background-color: #00A8FF;
+    color: aliceblue;
+}
+.container .card .btn button:hover {
+    transition: 0.15s ease-in-out;
+    transform: scale(1.05);
+}
+.container .card .card-content h2{
+    font-weight: 500;
+    margin: 10px;
+}
