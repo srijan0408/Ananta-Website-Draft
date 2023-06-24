@@ -15,14 +15,31 @@
 </head>
 
 <body>
-    <header class="navbar">
-        <img src="img\New\logo_black.png" alt="Logo">
-        <nav>
-            <a href="index.html">Home</a>
-            <a href="aboutus.html" class="active-link">About Us</a>
-            <a href="index.html#product">Products</a>
-            <a href="#">Contact Us</a>
-        </nav>
+    <header>
+        <div class="navbar">
+            <img src="img\New\logo_black.png" alt="Logo">
+            <nav>
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="aboutus.html " class="active-link">ABOUT</a></li>
+                    <li><a href="index.html#product">PRODUCTS</a></li>
+                    <li><a href="contactus.html" >CONTACT US</a></li>
+                </ul>
+            </nav>
+            <div class="icons">
+                <i class="fa-solid fa-bars"></i>
+                <!-- <i class="fa-solid fa-xmark"></i> -->
+            </div>
+        </div>
+
+        <div class="dropdown">
+            <ul>
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="aboutus.html" class="active-link">ABOUT</a></li>
+                <li><a href="index.html#product">PRODUCTS</a></li>
+                <li><a href="contactus.html" >CONTACT US</a></li>
+            </ul>
+        </div>
     </header>
     <section class="aboutus-top">
         <div class="heading">
@@ -31,10 +48,10 @@
         </div>
         <div class="container">
             <div class="container-left">
-                <img src="img\about.jpeg" alt="">
+                <img src="img\about.jpeg" alt=""  id="aboutimg">
             </div>
             <div class="container-right">
-                
+
                 <div class="content">
                     <h2>Our <span>Company</span></h2>
                     <p>Explore the designs for your spaces with a new outlook with Ananta’s wide variety of tiles
@@ -58,13 +75,15 @@
             <div class="section">
                 <i class="fa-solid fa-book-open"></i>
                 <h2>PHILOSOPHY</h2>
-                <p>Ananta's philosophy, going beyond possible everyday and in every way to constantly exceed the ever increasing expectation of our customer and all key stakeholders</p>
+                <p>Ananta's philosophy, going beyond possible everyday and in every way to constantly exceed the ever
+                    increasing expectation of our customer and all key stakeholders</p>
             </div>
 
             <div class="section">
                 <i class="fa-solid fa-eye"></i>
                 <h2>VISSION</h2>
-                <p>Ananta's vision, in the pursuit of excellence, we push bar for a better tomorrow through meaning full innovation</p>
+                <p>Ananta's vision, in the pursuit of excellence, we push bar for a better tomorrow through meaning full
+                    innovation</p>
             </div>
         </div>
     </section>
@@ -97,8 +116,8 @@
         <h2>Our <span>Certificates</span></h2>
         <div class="underline"></div>
         <div class="certificate-container">
-            <a href=""><button>Know More</button></a>
-            <a href=""><button>Know More</button></a>
+            <a href="305023040739q-ananta exim-iso9001-2015.pdf" download><button>Know More</button></a>
+            <a href="ANANTA EXIM CE-4159 (Constructioon).pdf" download><button>Know More</button></a>
         </div>
     </section>
     <footer>
@@ -110,31 +129,63 @@
                 <h1>Ananta Exim</h1>
                 <a href="mailto:info@anantaexim.in">Info@anantaexim.in</a>
                 <div class="social">
-                    <a href=""><i class="fa-brands fa-instagram"></i></a>
-                    <a href=""><i class="fa-brands fa-facebook"></i></a>
-                    <a href=""><i class="fa-brands fa-whatsapp"></i></a>
-                    <a href=""><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="https://api.whatsapp.com/send?phone=9023508778" target="_blank"><i
+                            class="fa-brands fa-whatsapp"></i></a>
+                    <a href="https://www.facebook.com/AnantaTilesandBathware?mibextid=ZbWKwL" target="_blank"><i
+                            class="fa-brands fa-facebook"></i></a>
+                    <a href="https://instagram.com/ananta_tiles_bathware?igshid=ZDdkNTZiNTM=" target="_blank"><i
+                            class="fa-brands fa-instagram"></i></a>
+                    <a href="https://www.linkedin.com/in/ananta-tiles-and-bathware-22bb29257/" target="_blank"><i
+                            class="fa-brands fa-linkedin"></i></a>
                 </div>
             </div>
             <div class="footer-section">
                 <h2>Contact</h2>
                 <p>Export</p>
-                <a href="tel:+91 9023508778" id="contactinfo"><h3>90235 08778</h3></a>
+                <a href="tel:+91 9023508778" id="contactinfo">
+                    <h3>90235 08778</h3>
+                </a>
                 <p>Domestic</p>
-                <a href="tel:+91 81417 21178" id="contactinfo"><h3>81417 21178</h3></a>
+                <a href="tel:+91 81417 21178" id="contactinfo">
+                    <h3>81417 21178</h3>
+                </a>
             </div>
             <div class="footer-section">
                 <h2>Products</h2>
-                <a href="">Wall Tiles</a>
-                <a href="">Floor Tiles</a>
-                <a href="">Bathware</a>
+                <a href="Products_html\walltiles.html">Wall Tiles</a>
+                <a href="Products_html\floortiles.html">Floor Tiles</a>
+                <a href="Products_html\bathware.html">Bathware</a>
             </div>
             <div class="additional">
                 <h2>About Us</h2>
-                <a href="">About Us</a>
+                <a href="aboutus.html">About Us</a>
             </div>
         </div>
     </footer>
 </body>
+
+<script>
+    const btn = document.querySelector('.icons');
+    const menu = document.querySelector('.dropdown')
+    const icon = document.querySelector('.icons i');
+    let isOpen = false;
+
+    btn.addEventListener("click", () => {
+        // alert("Check")
+        menu.classList.toggle('open')
+        if (isOpen) {
+            icon.classList.remove('rotate1');
+            icon.classList.add('rotate2');
+            icon.classList.replace('fa-xmark', 'fa-bars');
+        } else {
+            icon.classList.add('rotate1');
+            icon.classList.remove('rotate2');
+            icon.classList.replace('fa-bars', 'fa-xmark');
+        }
+
+        isOpen = !isOpen;
+    })
+
+</script>
 
 </html>

@@ -1,0 +1,447 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    overflow-x: hidden;
+    border: none;
+    font-family: 'Poppins', sans-serif;
+}
+span {
+    color: #00A8FF;
+}
+
+.active-link {
+    color: #00A8FF;
+    font-weight: 600
+}
+
+.divider {
+    display: inline-block;
+    width: 80%;
+    border-bottom: 4px solid #7171718f;
+    border-radius: 5px;
+    margin: 25px 150px;
+}
+
+.underline {
+    display: inline-block;
+    width: 100px;
+    border-bottom: 3px solid #00A8FF;
+    margin: 25px;
+
+}
+.underline2 {
+    display: inline-block;
+    width: 250px;
+    border-bottom: 3px solid #00A8FF;
+    margin: 25px;
+
+}
+/*=======================
+Navbar Section Starts
+======================= */
+header .icons {
+    display: none;
+}
+
+header {
+    
+    padding: 1.4rem;
+    /* background-color: aqua; */
+    background-color: #dedddd;
+    /* position: relative; */
+    height: auto;
+
+}
+
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+
+header img {
+    height: 60px;
+    width: 80px;
+}
+
+header nav ul {
+    display: flex;
+    gap: 30px;
+    cursor: pointer;
+
+    /* background-color: aquamarine; */
+}
+
+header nav ul li {
+    /* background-color: vrbqjwkelr0    aquamarine; */
+    width: 120px;
+    display: grid;
+    place-content: center;
+    height: 40px;
+}
+header nav ul li a{
+    text-decoration: none;
+    color: black;
+}
+header nav ul li a:hover {
+    color: #00A8FF;
+    font-weight: 600;
+
+}
+header .dropdown{
+    /* display: none; */
+    height: 0;
+    text-align: center;
+    transition: height 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+
+}
+
+header .dropdown.open{
+    height: 180px;
+}
+
+header .dropdown ul li{
+    padding: 0.6rem;
+}
+
+header .dropdown ul li a{
+    text-decoration: none;
+    color: black;
+}
+
+.rotate1 {
+    animation: rotateIconFront 0.2s ease-in-out;
+  }
+
+  .rotate2 {
+    animation: rotateIconBack 0.2s ease-in-out;
+  }
+  
+  @keyframes rotateIconFront {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(90deg);
+    }
+  }
+  @keyframes rotateIconBack {
+    from {
+      transform: rotate(120deg);
+    }
+    to {
+      transform: rotate(0deg);
+    }
+  }
+
+@media(max-width:980px){
+    nav{
+        display: none;
+    }
+    header .icons {
+        display: block;
+        font-size: 22px;
+        font-weight: 600;
+        cursor: pointer;
+        margin-right: 2rem;
+    }
+
+    header .dropdown{
+        display: block;
+    }
+}
+
+/*=======================
+Navbar Section Ends
+======================= */
+
+/*=======================
+Header Section Starts
+======================= */
+
+.img-container{
+    margin-bottom: 2rem;
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.8)), url('../img/carousel-2.1.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 70vh;
+    color: aliceblue;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   flex-direction: column;
+   text-align: center;
+}
+
+.img-heading{
+    width: 50%;
+}
+.img-container h1{
+    font-size: 48px;
+    font-weight: 500;
+    
+
+}
+
+
+
+
+/*=======================
+Header Section Ends
+======================= */
+
+/*=======================
+Products Section Ends
+======================= */
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-block: 3rem;
+}
+.header h1{
+     font-size: 38px;
+     font-weight: 500;
+}
+.con{
+    width: 90%;
+    border-radius: 30px;
+    padding: 3rem;
+    background-color: #dedede;
+    margin: 4rem;
+}
+.row {
+  display: -ms-flexbox; /* IE10 */
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  -ms-flex-wrap: wrap; /* IE10 */
+  flex-wrap: wrap;
+  padding: 0 4px;
+  height: auto;
+}
+
+/* Create four equal columns that sits next to each other */
+.column {
+  -ms-flex: 25%; /* IE10 */
+  flex: 25%;
+  gap: 2rem;
+  align-items: center;
+  max-width: 25%;
+  padding: 0 4px;
+}
+
+.column img {
+  margin-top: 8px;
+  vertical-align: middle;
+  width: 50%;
+  gap: 2rem;
+  margin-block: 2rem;
+  border-radius: 35px;
+}
+
+.img-content{
+    text-align: center;
+
+}
+
+.img-content h2{
+    font-size: 20px;
+    font-weight: 500;
+    margin-top: -1.5rem;
+}
+
+/* .otherproducts{
+    
+} */
+.otherproducts{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-block: 3.5rem;
+}
+
+.otherproducts .heading{
+    display: flex;
+    justify-content:center ;
+    align-items: center;
+    flex-direction: column;
+    margin-block: 2rem;
+}
+
+.otherproducts .heading h1{
+    font-size: 35px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+.product-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* gap: 0.5rem; */
+    align-items: center;
+    width: 100%;
+    /* background-color: aqua; */
+}
+
+.product-container .products-content{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    /* background-color: aquamarine; */
+} 
+
+.product-container .products-content .about-products{
+    width: 38%;
+    padding: 3.5rem;
+    display: flex;
+    justify-content: flex-start;
+    gap: 2.5rem;
+    align-items: center;
+    flex-direction: column;
+    text-align: left;
+}
+.product-container .products-content .about-products h2{
+    font-size: 28px;
+    font-weight: 500;
+}
+.product-container .products-content img{
+    height: 400px;
+    /* width: 400px; */
+}
+.product-container .products-content .about-products button{
+    width: 130px;
+    padding: 5px;
+    height: 40px;
+    font-size: 15px;
+    border-radius: 20px;
+    background-color: #001C5C;
+    color: aliceblue;
+}
+
+.product-container .products-content .about-products button:hover{
+    border: 1.5px solid #001C5C;
+    color: #001C5C;
+    background-color: transparent;
+    transition: 0.3s ease;
+}
+
+footer {
+    margin-top: 2rem;
+    /* background-color: #5c5c5c; */
+    background-color: #001C5C;
+    color: #fff;
+    border-radius: 40px 40px 0 0;
+
+}
+
+.footer-container {
+    height: 45vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+
+}
+
+.footer-container .additional {
+    display: flex;
+    /* background-color: aqua; */
+    height: 200px;
+    width: 18%;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.footer-container .additional a {
+    margin: 20px;
+    color: #adadad;
+    font-size: 15px;
+
+}
+
+.footer-container .footer-section img {
+    width: 180px;
+    height: 100px;
+}
+
+.footer-container .footer-section {
+    display: flex;
+    /* background-color: aqua; */
+    height: 200px;
+    width: 18%;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+}
+
+.footer-container .footer-section h2 {
+    font-size: 18px;
+    font-weight: 500;
+    margin: 5px;
+}
+
+.footer-container .footer-section h1 {
+    font-size: 30px;
+    font-weight: 500;
+    margin: 5px;
+}
+
+#contactinfo {
+    color: #fff;
+    font-weight: 400;
+    font-size: 16px;
+}
+
+.footer-container .footer-section a {
+    color: #adadad;
+    font-size: 16px;
+    text-decoration: none;
+}
+
+.footer-container .footer-section a:hover {
+    color: #fff;
+}
+
+.footer-container .footer-section .social {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+}
+
+.footer-container .footer-section .social a {
+    font-size: 25px;
+}
+.footer-container  .additional a{
+    text-decoration: none;
+}
+.footer-container  .additional a:hover{
+    color: #fff;
+}
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (max-width: 800px) {
+  .column {
+    -ms-flex: 50%;
+    flex: 50%;
+    max-width: 50%;
+  }
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column {
+    -ms-flex: 100%;
+    flex: 100%;
+    max-width: 100%;
+  }
+}

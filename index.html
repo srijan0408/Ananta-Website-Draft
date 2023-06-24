@@ -16,14 +16,31 @@
 
 <body>
     <div class="homecontainer">
-        <header class="navbar">
-            <img src="img\New\logo_black.png" alt="Logo">
-            <nav>
-                <a href="index.html" class="active-link">Home</a>
-                <a href="aboutus.html">About Us</a>
-                <a href="#product">Products</a>
-                <a href="contactus.html">Contact Us</a>
-            </nav>
+        <header>
+            <div class="navbar">
+                <img src="img\New\logo_black.png" alt="Logo">
+                <nav>
+                    <ul>
+                        <li><a href="index.html" class="active-link">HOME</a></li>
+                        <li><a href="aboutus.html">ABOUT</a></li>
+                        <li><a href="index.html#product">PRODUCTS</a></li>
+                        <li><a href="contactus.html">CONTACT US</a></li>
+                    </ul>
+                </nav>
+                <div class="icons">
+                    <i class="fa-solid fa-bars"></i>
+                    <!-- <i class="fa-solid fa-xmark"></i> -->
+                </div>
+            </div>
+
+            <div class="dropdown">
+                <ul>
+                    <li><a href="index.html" class="active-link">HOME</a></li>
+                    <li><a href="aboutus.html">ABOUT</a></li>
+                    <li><a href="index.html#product">PRODUCTS</a></li>
+                    <li><a href="contactus.html">CONTACT US</a></li>
+                </ul>
+            </div>
         </header>
         <section class="home" id="home">
             <div class="heading">
@@ -70,7 +87,7 @@
                         <p>Elevate Your Walls: Transform Spaces with Stunning Wall Tiles</p>
                     </div>
                     <div class="btn">
-                        <a href="walltiles.html"><button>Know more</button></a>
+                        <a href="Products_html\walltiles.html"><button>Know more</button></a>
                     </div>
                 </div>
 
@@ -83,7 +100,7 @@
                         <p>Indulge in Luxury: Create Your Dream Bathroom with Exquisite Bathware</p>
                     </div>
                     <div class="btn">
-                        <a href="bathware.html"><button>Know more</button></a>
+                        <a href="Products_html\bathware.html"><button>Know more</button></a>
                     </div>
                 </div>
 
@@ -96,7 +113,7 @@
                         <p>Step into Elegance: Elevate Your Floors with Our Stunning Tiles</p>
                     </div>
                     <div class="btn">
-                        <a href="floortiles.html"><button>Know more</button></a>
+                        <a href="Products_html\floortiles.html"><button>Know more</button></a>
                     </div>
                 </div>
             </div>
@@ -122,7 +139,8 @@
                     </div>
                     <div class="user-text">
                         <i class="fa-solid fa-quote-left qouteicon"></i>
-                        <p id="one">All the Ananta promises, including the 45-day delivery promise, was met in such a timely and organized way that i could finish my construction site on time.</p>
+                        <p id="one">All the Ananta promises, including the 45-day delivery promise, was met in such a
+                            timely and organized way that i could finish my construction site on time.</p>
                         <p id="two">Mr. Mohemad</p>
                     </div>
                 </div>
@@ -144,24 +162,32 @@
                 <h1>Ananta Exim</h1>
                 <a href="mailto:info@anantaexim.in">Info@anantaexim.in</a>
                 <div class="social">
-                    <a href=""><i class="fa-brands fa-instagram"></i></a>
-                    <a href=""><i class="fa-brands fa-facebook"></i></a>
-                    <a href=""><i class="fa-brands fa-whatsapp"></i></a>
-                    <a href=""><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="https://api.whatsapp.com/send?phone=9023508778" target="_blank"><i
+                            class="fa-brands fa-whatsapp"></i></a>
+                    <a href="https://www.facebook.com/AnantaTilesandBathware?mibextid=ZbWKwL" target="_blank"><i
+                            class="fa-brands fa-facebook"></i></a>
+                    <a href="https://instagram.com/ananta_tiles_bathware?igshid=ZDdkNTZiNTM=" target="_blank"><i
+                            class="fa-brands fa-instagram"></i></a>
+                    <a href="https://www.linkedin.com/in/ananta-tiles-and-bathware-22bb29257/" target="_blank"><i
+                            class="fa-brands fa-linkedin"></i></a>
                 </div>
             </div>
             <div class="footer-section">
                 <h2>Contact</h2>
                 <p>Export</p>
-                <a href="tel:+91 9023508778" id="contactinfo"><h3>90235 08778</h3></a>
+                <a href="tel:+91 9023508778" id="contactinfo">
+                    <h3>90235 08778</h3>
+                </a>
                 <p>Domestic</p>
-                <a href="tel:+91 81417 21178" id="contactinfo"><h3>81417 21178</h3></a>
+                <a href="tel:+91 81417 21178" id="contactinfo">
+                    <h3>81417 21178</h3>
+                </a>
             </div>
             <div class="footer-section">
                 <h2>Products</h2>
-                <a href="walltiles.html">Wall Tiles</a>
-                <a href="floortiles.html">Floor Tiles</a>
-                <a href="bathware.html">Bathware</a>
+                <a href="Products_html\walltiles.html">Wall Tiles</a>
+                <a href="Products_html\floortiles.html">Floor Tiles</a>
+                <a href="Products_html\bathware.html">Bathware</a>
             </div>
             <div class="additional">
                 <h2>About Us</h2>
@@ -172,6 +198,29 @@
 
 
     <script src="script1.js"></script>
+    <script>
+        const btn = document.querySelector('.icons');
+        const menu = document.querySelector('.dropdown')
+        const icon = document.querySelector('.icons i');
+        let isOpen = false;
+
+        btn.addEventListener("click", () => {
+            // alert("Check")
+            menu.classList.toggle('open')
+            if (isOpen) {
+                icon.classList.remove('rotate1');
+                icon.classList.add('rotate2');
+                icon.classList.replace('fa-xmark', 'fa-bars');
+            } else {
+                icon.classList.add('rotate1');
+                icon.classList.remove('rotate2');
+                icon.classList.replace('fa-bars', 'fa-xmark');
+            }
+
+            isOpen = !isOpen;
+        })
+
+    </script>
 </body>
 
 </html>
