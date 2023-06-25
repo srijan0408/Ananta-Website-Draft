@@ -754,18 +754,18 @@ footer {
     .column img {
         margin-top: 8px;
         vertical-align: middle;
-        width: 80%;
+        width: 90%;
         gap: 2rem;
-        margin-block: 2rem;
+        margin-block: 1.5rem;
         border-radius: 35px;
     }
 
     .con {
-        width: 90%;
+        width: 100%;
         border-radius: 30px;
-        padding: 1.5rem;
+        padding: 1rem;
         background-color: #dedede;
-        margin: 1.5rem;
+        margin: 0.8rem;
     }
 }
 
