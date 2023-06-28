@@ -15,6 +15,7 @@
 </head>
 
 <body>
+    <div id="preloader"></div>
     <div class="homecontainer">
         <header>
             <div class="navbar">
@@ -42,20 +43,20 @@
                 </ul>
             </div>
         </header>
-        <section class="home" id="home">
-            <div class="heading">
+        <section class="home " id="home">
+            <div class="heading hidden1">
                 <h2><span>Transform</span> Your Space With Us</h2>
                 <h3>Unleash Your Imagination with Our <br>Innovative <span>Bathware</span> and <span>Tiles</span>
                     Solutions.</h3>
                 <!-- <p>Elegant Solutions to Complex Problems</p> -->
                 <div class="underline"></div>
             </div>
-            <div class="btn">
+            <div class="btn hidden1">
                 <a href="#info"><button>Know more</button></a>
             </div>
         </section>
     </div>
-    <section class="info" id="info">
+    <section class="info hidden" id="info">
         <div class="left">
             <img src="img\carousel-1.jpeg" alt="About Image 1">
         </div>
@@ -69,8 +70,8 @@
         </div>
 
     </section>
-    <section class="productsinfo" id="product">
-        <div class="container">
+    <section class="productsinfo " id="product">
+        <div class="container hidden1">
             <div class="heading">
                 <h1>Our <span>Products</span></h1>
                 <div class="underline"></div>
@@ -78,7 +79,7 @@
                     beatae eum debitis!</h3>
             </div>
             <div class="card-container">
-                <div class="card">
+                <div class="card hidden">
                     <div class="card-image">
                         <img src="img\New\walltiles.jpg" alt="Image 1">
                     </div>
@@ -91,7 +92,7 @@
                     </div>
                 </div>
 
-                <div class="card">
+                <div class="card hidden">
                     <div class="card-image">
                         <img src="img\New\bathroom.jpg" alt="Image 2">
                     </div>
@@ -104,7 +105,7 @@
                     </div>
                 </div>
 
-                <div class="card">
+                <div class="card hidden">
                     <div class="card-image">
                         <img src="img\floor-tiles.png" alt="Image 3">
                     </div>
@@ -121,7 +122,7 @@
         </div>
     </section>
     <div class="divider"></div>
-    <section class="testimonial">
+    <section class="testimonial hidden">
         <div class="feedback-container">
             <div class="heading">
                 <h2><span>Happy Clients</span></h2>
@@ -155,10 +156,10 @@
     </section>
     <footer>
         <div class="footer-container">
-            <div class="additional">
+            <div class="additional hidden1">
                 <img src="img\logo-2.png" alt="Logo">
             </div>
-            <div class="footer-section">
+            <div class="footer-section hidden1">
                 <h1>Ananta Exim</h1>
                 <a href="mailto:info@anantaexim.in">Info@anantaexim.in</a>
                 <div class="social">
@@ -172,7 +173,7 @@
                             class="fa-brands fa-linkedin"></i></a>
                 </div>
             </div>
-            <div class="footer-section">
+            <div class="footer-section hidden1">
                 <h2>Contact</h2>
                 <p>Export</p>
                 <a href="tel:+91 9023508778" id="contactinfo">
@@ -183,13 +184,13 @@
                     <h3>81417 21178</h3>
                 </a>
             </div>
-            <div class="footer-section">
+            <div class="footer-section hidden1">
                 <h2>Products</h2>
                 <a href="Products_html\walltiles.html">Wall Tiles</a>
                 <a href="Products_html\floortiles.html">Floor Tiles</a>
                 <a href="Products_html\bathware.html">Bathware</a>
             </div>
-            <div class="additional">
+            <div class="additional hidden1">
                 <h2>About Us</h2>
                 <a href="aboutus.html">About Us</a>
             </div>
@@ -221,6 +222,12 @@
         })
 
     </script>
+    <!-- <script>
+        const preLoader = document.getElementById('preloader')
+        window.addEventListener('load' , function(){
+            preLoader.style.display = "none";
+        })
+    </script> -->
 </body>
 
 </html>
