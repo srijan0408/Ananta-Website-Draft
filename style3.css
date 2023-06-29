@@ -104,8 +104,8 @@ header {
 }
 
 header img {
-    height: 70px;
-    width: 100px;
+    height: 60px;
+    width: 80px;
 }
 
 header nav ul {
@@ -127,7 +127,7 @@ header nav ul li {
 header nav ul li a {
     text-decoration: none;
     color: black;
-    font-size: 18px;
+    font-size: 16px;
 }
 
 header nav ul li a:hover {
