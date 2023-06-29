@@ -363,12 +363,13 @@ header .dropdown ul li a {
     justify-content: space-around;
     align-items: center;
     flex-wrap: wrap;
+    height: auto;
 
 }
 
 .container .card {
     background-color: aliceblue;
-    height: 70vh;
+    height: 90vh;
     /* height: 60vh; */
     width: 20%;
     text-align: center;
