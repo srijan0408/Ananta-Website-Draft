@@ -41,16 +41,16 @@
             </ul>
         </div>
     </header>
-    <section class="aboutus-top">
-        <div class="heading">
+    <section class="aboutus-top hidden1">
+        <div class="heading ">
             <h2><span>About</span> Us</h2>
             <div class="underline"></div>
         </div>
         <div class="container">
-            <div class="container-left">
+            <div class="container-left hidden">
                 <img src="img\about.jpeg" alt=""  id="aboutimg">
             </div>
-            <div class="container-right">
+            <div class="container-right hidden2">
 
                 <div class="content">
                     <h2>Our <span>Company</span></h2>
@@ -88,24 +88,24 @@
         </div>
     </section>
     <div class="divider"></div>
-    <section class="img">
+    <section class="img hidden3">
         <img src="img\export.png" alt="world">
     </section>
     <section class="aboutus-bottom">
-        <div class="container-bg">
-            <div class="count">
+        <div class="container-bg hidden1">
+            <div class="count hidden">
                 <h1>5+</h1>
                 <p>Years Of Experience</p>
             </div>
-            <div class="count">
+            <div class="count hidden">
                 <h1>125+</h1>
                 <p>Satisfied Clients</p>
             </div>
-            <div class="count">
+            <div class="count hidden2">
                 <h1>25+</h1>
                 <p>Countries</p>
             </div>
-            <div class="count">
+            <div class="count hidden2">
                 <h1>26+</h1>
                 <p>Projects</p>
             </div>
@@ -113,14 +113,14 @@
     </section>
     <div class="divider"></div>
     <section class="certificates">
-        <h2>Our <span>Certificates</span></h2>
+        <h2 class="hidden1">Our <span>Certificates</span></h2>
         <div class="underline"></div>
         <div class="certificate-container">
-            <a href="305023040739q-ananta exim-iso9001-2015.pdf" download><button>Know More</button></a>
-            <a href="ANANTA EXIM CE-4159 (Constructioon).pdf" download><button>Know More</button></a>
+            <a href="305023040739q-ananta exim-iso9001-2015.pdf" download class="hidden"><button>Know More</button></a>
+            <a href="ANANTA EXIM CE-4159 (Constructioon).pdf" download class="hidden2"><button>Know More</button></a>
         </div>
     </section>
-    <footer>
+    <footer class="hidden1">
         <div class="footer-container">
             <div class="additional">
                 <img src="img\logo-2.png" alt="Logo">
@@ -163,7 +163,7 @@
         </div>
     </footer>
 </body>
-
+<script src="aboutUsScript.js"></script>
 <script>
     const btn = document.querySelector('.icons');
     const menu = document.querySelector('.dropdown')

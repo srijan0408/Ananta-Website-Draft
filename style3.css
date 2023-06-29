@@ -5,6 +5,7 @@
     padding: 0;
     box-sizing: border-box;
     overflow-x: hidden;
+    scroll-behavior: smooth;
     font-family: 'Poppins', sans-serif;
 }
 
@@ -33,6 +34,50 @@ span {
 
 }
 
+.hidden{
+    opacity: 0;
+    transition: all 1s;
+}
+.show{
+    opacity: 1;
+    transition: all 1s ease-in-out;
+}
+.hidden2{
+    opacity: 0;
+    transition: all 1s;
+    filter: blur(8px);
+    transform: scale(0.2);
+}
+.show2{
+    opacity: 1;
+    filter: blur(0);
+    transform: scale(1);
+    transition: all 1s;
+}
+
+.hidden1{
+    opacity: 0;
+    transition: all 1s;
+    filter: blur(8px);
+    transform: translateY(100%);
+}
+.show1{
+    opacity: 1;
+    filter: blur(0);
+    transform: translateY(0);
+    transition: all 1s ease-in-out;
+}
+
+.contact-info .contact-box:nth-child(2){
+    transition-delay: 200ms;
+}
+.contact-info .contact-box:nth-child(3){
+    transition-delay: 400ms;
+}
+.contact-info .contact-box:nth-child(4){
+    transition-delay: 600ms;
+}
+
 /* 
 ==============================
 Navbar Section
@@ -59,8 +104,8 @@ header {
 }
 
 header img {
-    height: 60px;
-    width: 80px;
+    height: 80px;
+    width: 110px;
 }
 
 header nav ul {
@@ -73,7 +118,7 @@ header nav ul {
 
 header nav ul li {
     /* background-color: vrbqjwkelr0    aquamarine; */
-    width: 120px;
+    width: 150px;
     display: grid;
     place-content: center;
     height: 40px;
@@ -82,6 +127,7 @@ header nav ul li {
 header nav ul li a {
     text-decoration: none;
     color: black;
+    font-size: 20px;
 }
 
 header nav ul li a:hover {

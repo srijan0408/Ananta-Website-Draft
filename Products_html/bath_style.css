@@ -6,6 +6,7 @@
     box-sizing: border-box;
     overflow-x: hidden;
     border: none;
+    scroll-behavior: smooth;
     font-family: 'Poppins', sans-serif;
 }
 
@@ -42,6 +43,63 @@ span {
 
 }
 
+.hidden{
+    opacity: 0;
+    transition: all 1s;
+    filter: blur(8px);
+    transform: translate(-100%);
+}
+.hidden1{
+    opacity: 0;
+    transition: all 1s;
+}
+.hidden2{
+    opacity: 0;
+    transition: all 1s;
+    filter: blur(8px);
+    transform: translate(100%);
+}
+.hidden3{
+    opacity: 0;
+    transition: all 1s;
+    filter: blur(8px);
+    transform: scale(0.2);
+}
+.hidden4{
+    opacity: 0;
+    transition: all 1s;
+    filter: blur(8px);
+    transform: translateY(100%);
+}
+.show{
+    opacity: 1;
+    filter: blur(0);
+    transform: translate(0);
+    transition: all 1s ease-in-out;
+}
+.show1{
+    opacity: 1;
+    transition: all 1s ease-in-out;
+}
+.show2{
+    opacity: 1;
+    filter: blur(0);
+    transform: translate(0);
+    transition: all 1s ease-in-out;
+}
+.show3{
+    opacity: 1;
+    filter: blur(0);
+    transform: scale(1);
+    transition: all 1s;
+}
+.show4{
+    opacity: 1;
+    filter: blur(0);
+    transform: translateY(0);
+    transition: all 1s ease-in-out;
+}
+
 /*=======================
 Navbar Section Starts
 ======================= */
@@ -67,8 +125,8 @@ header {
 }
 
 header img {
-    height: 60px;
-    width: 80px;
+    height: 80px;
+    width: 110px;
 }
 
 header nav ul {
@@ -81,7 +139,7 @@ header nav ul {
 
 header nav ul li {
     /* background-color: vrbqjwkelr0    aquamarine; */
-    width: 120px;
+    width: 150px;
     display: grid;
     place-content: center;
     height: 40px;
@@ -90,6 +148,7 @@ header nav ul li {
 header nav ul li a {
     text-decoration: none;
     color: black;
+    font-size: 20px;
 }
 
 header nav ul li a:hover {
@@ -117,6 +176,7 @@ header .dropdown ul li {
 header .dropdown ul li a {
     text-decoration: none;
     color: black;
+    
 }
 
 .rotate1 {
@@ -322,6 +382,11 @@ Products Section Ends
     justify-content: space-around;
     /* background-color: aquamarine; */
 }
+/* .product-container .products-content:nth-child(2){
+    transition-delay: 200ms;
+} */
+
+
 
 .product-container .products-content .about-products {
     width: 40%;

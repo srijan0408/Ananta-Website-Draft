@@ -6,6 +6,7 @@
     box-sizing: border-box;
     overflow-x: hidden;
     border: none;
+    scroll-behavior: smooth;
     font-family: 'Poppins', sans-serif;
 }
 
@@ -32,6 +33,50 @@ span {
     border-bottom: 3px solid #00A8FF;
     margin: 25px;
 
+}
+.hidden{
+    opacity: 0;
+    transition: all 1s;
+    filter: blur(8px);
+    transform: translate(-100%);
+}
+.hidden1{
+    opacity: 0;
+    transition: all 1s;
+}
+.hidden2{
+    opacity: 0;
+    transition: all 1s;
+    filter: blur(8px);
+    transform: translate(100%);
+}
+.hidden3{
+    opacity: 0;
+    transition: all 1s;
+    filter: blur(8px);
+    transform: scale(0.2);
+}
+.show{
+    opacity: 1;
+    filter: blur(0);
+    transform: translate(0);
+    transition: all 1s ease-in-out;
+}
+.show1{
+    opacity: 1;
+    transition: all 1s ease-in-out;
+}
+.show2{
+    opacity: 1;
+    filter: blur(0);
+    transform: translate(0);
+    transition: all 1s ease-in-out;
+}
+.show3{
+    opacity: 1;
+    filter: blur(0);
+    transform: scale(1);
+    transition: all 1s;
 }
 
 .aboutus-top .container .container-left img {
@@ -62,8 +107,8 @@ header {
 }
 
 header img {
-    height: 60px;
-    width: 80px;
+    height: 80px;
+    width: 110px;
 }
 
 header nav ul {
@@ -76,7 +121,7 @@ header nav ul {
 
 header nav ul li {
     /* background-color: vrbqjwkelr0    aquamarine; */
-    width: 120px;
+    width: 150px;
     display: grid;
     place-content: center;
     height: 40px;
@@ -85,6 +130,7 @@ header nav ul li {
 header nav ul li a {
     text-decoration: none;
     color: black;
+    font-size: 20px;
 }
 
 header nav ul li a:hover {
@@ -434,6 +480,16 @@ footer {
 
 .footer-container .additional a:hover {
     color: #fff;
+}
+
+.container-bg .count:nth-child(2){
+    transition-delay: 200ms;
+}
+.container-bg .count:nth-child(3){
+    transition-delay: 400ms;
+}
+.container-bg .count:nth-child(4){
+    transition-delay: 600ms;
 }
 
 

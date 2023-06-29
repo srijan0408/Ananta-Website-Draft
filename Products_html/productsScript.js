@@ -1,21 +1,3 @@
-// Js For Testimonial
-
-let texts = document.getElementsByClassName("user-text");
-let buttons = document.getElementsByClassName("empty-button");
-
-function chnageReiew(){
-    for(text of texts){
-        text.classList.remove("active-text");
-    }
-    for(btns of buttons){
-        btns.classList.remove("active-btn");
-    }
-    let i = Array.from(buttons).indexOf(event.target);
-    buttons[i].classList.add("active-btn");
-    texts[i].classList.add("active-text");
-}
-
-
 /*JS For Animmation */
 
 const observer =  new IntersectionObserver((entries) =>{
@@ -62,3 +44,32 @@ const observer2 =  new IntersectionObserver((entries) =>{
 
 const hiddenElement2 = document.querySelectorAll('.hidden2');
 hiddenElement2.forEach((el) => observer2.observe(el));
+const observer3 =  new IntersectionObserver((entries) =>{
+    entries.forEach((entry)=>{
+        console.log(entry);
+        if(entry.isIntersecting){
+            entry.target.classList.add('show4');
+        }
+        else{
+            entry.target.classList.remove('show4')
+        }
+    });
+});
+
+const hiddenElement3 = document.querySelectorAll('.hidden4');
+hiddenElement3.forEach((el) => observer3.observe(el));
+
+const observer4 =  new IntersectionObserver((entries) =>{
+    entries.forEach((entry)=>{
+        console.log(entry);
+        if(entry.isIntersecting){
+            entry.target.classList.add('show3');
+        }
+        else{
+            entry.target.classList.remove('show3')
+        }
+    });
+});
+
+const hiddenElement4 = document.querySelectorAll('.hidden3');
+hiddenElement4.forEach((el) => observer4.observe(el));

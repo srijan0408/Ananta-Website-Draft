@@ -18,3 +18,53 @@ btn.addEventListener("click",() =>{
       
       isOpen = !isOpen;
 })
+
+//Js For Animation
+
+const observer =  new IntersectionObserver((entries) =>{
+  entries.forEach((entry)=>{
+      console.log(entry);
+      if(entry.isIntersecting){
+          entry.target.classList.add('show1');
+      }
+      else{
+          entry.target.classList.remove('show1')
+      }
+  });
+});
+
+const hiddenElement = document.querySelectorAll('.hidden1');
+hiddenElement.forEach((el) => observer.observe(el));
+
+const observer2 =  new IntersectionObserver((entries) =>{
+  entries.forEach((entry)=>{
+      console.log(entry);
+      if(entry.isIntersecting){
+          entry.target.classList.add('show');
+      }
+      else{
+          entry.target.classList.remove('show')
+      }
+  });
+});
+
+const hiddenElement2 = document.querySelectorAll('.hidden');
+hiddenElement2.forEach((el) => observer2.observe(el));
+
+const observer3 =  new IntersectionObserver((entries) =>{
+  entries.forEach((entry)=>{
+      console.log(entry);
+      if(entry.isIntersecting){
+          entry.target.classList.add('show3');
+      }
+      else{
+          entry.target.classList.remove('show3')
+      }
+  });
+});
+
+const hiddenElement3 = document.querySelectorAll('.hidden1');
+hiddenElement3.forEach((el) => observer3.observe(el));
+
+
+
