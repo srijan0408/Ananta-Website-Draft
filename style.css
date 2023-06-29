@@ -62,8 +62,8 @@ header {
 }
 
 header img {
-    height: 80px;
-    width: 110px;
+    height: 70px;
+    width: 90px;
 }
 
 header nav ul {
@@ -85,7 +85,7 @@ header nav ul li {
 header nav ul li a {
     text-decoration: none;
     color: black;
-    font-size: 20px;
+    font-size: 18px;
 }
 
 header nav ul li a:hover {
@@ -245,7 +245,7 @@ header .dropdown ul li a {
 }
 
 .home .heading h2 {
-    font-size: 55px;
+    font-size: 45px;
     margin: 20px;
     font-weight: 500;
     text-transform: uppercase;
@@ -253,7 +253,7 @@ header .dropdown ul li a {
 
 
 .home .heading h3 {
-    font-size: 34px;
+    font-size: 30px;
     margin: 20px 0px 5px 0px;
     font-weight: 500;
     /* line-height: 2.8rem; */
