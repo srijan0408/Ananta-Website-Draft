@@ -55,16 +55,31 @@ const observer3 =  new IntersectionObserver((entries) =>{
   entries.forEach((entry)=>{
       console.log(entry);
       if(entry.isIntersecting){
-          entry.target.classList.add('show3');
+          entry.target.classList.add('show2');
       }
       else{
-          entry.target.classList.remove('show3')
+          entry.target.classList.remove('show2')
       }
   });
 });
 
-const hiddenElement3 = document.querySelectorAll('.hidden1');
+const hiddenElement3 = document.querySelectorAll('.hidden2');
 hiddenElement3.forEach((el) => observer3.observe(el));
+
+const observer4 =  new IntersectionObserver((entries) =>{
+    entries.forEach((entry)=>{
+        console.log(entry);
+        if(entry.isIntersecting){
+            entry.target.classList.add('show3');
+        }
+        else{
+            entry.target.classList.remove('show3')
+        }
+    });
+  });
+  
+  const hiddenElement4 = document.querySelectorAll('.hidden3');
+  hiddenElement4.forEach((el) => observer4.observe(el));
 
 
 
